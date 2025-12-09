@@ -1,0 +1,141 @@
+#InvestorIncomeTable td,
+#InvestorIncomeTable th {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.dataTables_wrapper .dataTables_scrollHead table {
+    margin-bottom: 0 !important;
+}
+
+.dataTables_scrollBody table {
+    margin-top: 0 !important;
+    border-top: none !important;
+}
+
+/* Enhanced modal styles */
+.modal-header.bg-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3) !important;
+}
+
+.input-group-text {
+    font-weight: 600;
+}
+
+.form-control-lg {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.alert {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert-info {
+    background: linear-gradient(45deg, #d1ecf1, #bee5eb);
+    color: #0c5460;
+}
+
+.alert-success {
+    background: linear-gradient(45deg, #d4edda, #c3e6cb);
+    color: #155724;
+}
+
+.alert-warning {
+    background: linear-gradient(45deg, #fff3cd, #ffeaa7);
+    color: #856404;
+}
+
+.alert-danger {
+    background: linear-gradient(45deg, #f8d7da, #f5c6cb);
+    color: #721c24;
+}
+
+.modal-lg .modal-body {
+    padding: 2rem;
+}
+
+.btn-lg {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+#reinvestedAmount,
+#cashOutAmount {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#reinvestedAmount:focus,
+#cashOutAmount:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#reinvestedAmount[readonly] {
+    background-color: #f8f9fa;
+    border-color: #28a745;
+    cursor: not-allowed;
+}
+
+#reinvestedAmount[readonly]:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+#cashOutAmount.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.modal-title i {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.summary-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.distribute-btn {
+    transition: all 0.3s ease;
+}
+
+.distribute-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}

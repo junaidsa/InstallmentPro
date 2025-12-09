@@ -1,0 +1,9 @@
+
+apache
+# Disable directory browsing
+Options -Indexes
+
+# Allow access to all files in this directory
+<Files "*">
+    Allow from all
+</Files>
