@@ -547,43 +547,43 @@
 
 
                 $("#DueNearTable").DataTable({
-                dom: "Bfrtip",
-                responsive: false,
-                autoWidth: false,
-                scrollX: true,
-                buttons: [{
-                        extend: "excelHtml5",
-                        title: "Due Date Near Sheet",
-                        text: "Export to Excel",
-                        className: "btn btn-secondary",
-                        exportOptions: {
-                            columns: ":not(.noExport)",
+                    dom: "Bfrtip",
+                    responsive: false,
+                    autoWidth: false,
+                    scrollX: true,
+                    buttons: [{
+                            extend: "excelHtml5",
+                            title: "Due Date Near Sheet",
+                            text: "Export to Excel",
+                            className: "btn btn-secondary",
+                            exportOptions: {
+                                columns: ":not(.noExport)",
+                            },
                         },
-                    },
-                    {
-                        extend: "pdfHtml5",
-                        title: "Due Date Near Sheet",
-                        text: "Export to PDF",
-                        className: "btn btn-success",
-                        orientation: "landscape",
-                        pageSize: "A4",
-                        exportOptions: {
-                            columns: ":not(.noExport)",
-                        },
-                        customize: function(doc) {
-                            doc.styles.title = {
-                                fontSize: 14,
-                                bold: true,
-                                alignment: "center"
-                            };
-                            doc.defaultStyle.fontSize = 10;
-                            doc.pageMargins = [20, 20, 20, 20];
+                        {
+                            extend: "pdfHtml5",
+                            title: "Due Date Near Sheet",
+                            text: "Export to PDF",
+                            className: "btn btn-success",
+                            orientation: "landscape",
+                            pageSize: "A4",
+                            exportOptions: {
+                                columns: ":not(.noExport)",
+                            },
+                            customize: function(doc) {
+                                doc.styles.title = {
+                                    fontSize: 14,
+                                    bold: true,
+                                    alignment: "center"
+                                };
+                                doc.defaultStyle.fontSize = 10;
+                                doc.pageMargins = [20, 20, 20, 20];
+                            }
                         }
-                    }
-                ],
-            });
+                    ],
+                });
             });
         </script>
-        
+
         @include('components.notification')
 </body>
